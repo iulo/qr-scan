@@ -24,9 +24,11 @@ const props = defineProps({
 const emit = defineEmits(['media-error', 'onsuccess'])
 
 let mode = 0 // 0: drawImage video, 1: videoTracks + ImageCapture
-if (typeof MediaStream.prototype.getVideoTracks === 'function' && (window as any).ImageCapture !== undefined) {
-  mode = 0
-}
+
+// FIXME: use mode 1 seems like more slow
+// if (typeof MediaStream.prototype.getVideoTracks === 'function' && (window as any).ImageCapture !== undefined) {
+//   mode = 1
+// }
 let decodeWorker: Worker
 let videoWorker: Worker
 let decodeWorkerReady = true
