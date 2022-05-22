@@ -7,6 +7,7 @@ export default defineConfig({
     host: '0.0.0.0',
     https: true
   },
-  base: '/qr-scan/',
+  base: '/',
+  // base: '/qr-scan/',
   plugins: [vue()]
 })
