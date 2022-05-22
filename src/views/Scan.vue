@@ -18,7 +18,7 @@ const onSuccess = (txt: string) => {
 
 <script lang="ts">
 export default {
-  beforeRouteEnter(to, from, next) {
+  beforeRouteEnter(to: any, from: any, next: any) {
     console.log(from)
     if (from.href) {
       next()
