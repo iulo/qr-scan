@@ -1,35 +1,26 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" /> -->
-  <Scanner v-if="isShowScanner" @onsuccess="onScanSuccess"></Scanner>
-  <p>{{ text }}</p>
-  <button @click="openScanner">scan</button>
+  <div class="app">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import Scanner from './components/Scanner.vue'
 
-const isShowScanner = ref(false)
-const text = ref('')
-
-const onScanSuccess = (scanText: string) => {
-  text.value = scanText
-  isShowScanner.value = false
-}
-
-const openScanner = () => {
-  isShowScanner.value = true
-}
 </script>
 
-<style>
-#app {
+<style lang="scss">
+.app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
-  margin-top: 60px;
+  padding: 20px;
 }
+
+/* https://bulma.io/documentation/customize/with-webpack/#9-add-your-own-bulma-styles */
+@import 'bulma/sass/utilities/_all.sass';
+@import 'bulma/sass/base/_all.sass';
+@import 'bulma/sass/elements/button.sass';
+@import 'bulma/sass/elements/content.sass';
 </style>

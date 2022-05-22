@@ -44,6 +44,7 @@ decodeWorker.addEventListener('message', event => {
     console.log('Found code!', event.data)
     self.postMessage(event.data)
     decodeWorker.terminate()
+    self.close()
   } else {
     decodeWorkerReady = true
   }
