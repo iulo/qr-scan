@@ -24,6 +24,9 @@
     "sass": "^1.52.1",
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
-    "vue-tsc": "^0.34.7"
+    "vite-plugin-mkcert": "^1.6.4",
+    "vite-plugin-pwa": "^0.12.0",
+    "vue-tsc": "^0.34.7",
+    "workbox-window": "^6.5.3"
   }
 }

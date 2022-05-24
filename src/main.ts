@@ -3,6 +3,18 @@ import { createPinia } from 'pinia'
 import VueToast from 'vue-toast-notification'
 import 'vue-toast-notification/dist/theme-default.css'
 import { router } from './router'
+
+// import { registerSW } from 'virtual:pwa-register'
+
+// const updateSW = registerSW({
+//   onNeedRefresh() {
+//     console.log('onNeedRefresh')
+//   },
+//   onOfflineReady() {
+//     console.log('onOfflineReady')
+//   },
+// })
+
 // import 'bulma/css/bulma.css'
 // import VConsole from 'vconsole'
 // import VConsoleStatsPlugin from 'vconsole-stats-plugin'

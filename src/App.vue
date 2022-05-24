@@ -2,10 +2,11 @@
   <div class="app">
     <router-view></router-view>
   </div>
+  <ReloadPrompt></ReloadPrompt>
 </template>
 
 <script setup lang="ts">
-
+import ReloadPrompt from './components/ReloadPrompt.vue'
 </script>
 
 <style lang="scss">
