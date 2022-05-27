@@ -19,7 +19,7 @@ export default defineConfig({
     splitVendorChunkPlugin(),
     VitePWA({
       devOptions: {
-        enabled: true
+        // enabled: true
       },
       includeAssets: ['favicon.svg', 'favicon.ico', 'apple-touch-icon.png'],
       manifest: {
