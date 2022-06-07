@@ -3,6 +3,12 @@ import vue from '@vitejs/plugin-vue'
 import { splitVendorChunkPlugin } from 'vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import mkcert from 'vite-plugin-mkcert'
+import WindiCSS from 'vite-plugin-windicss'
+import Components from 'unplugin-vue-components/vite'
+import { Vuetify3Resolver } from 'unplugin-vue-components/resolvers'
+// import { VarletUIResolver } from 'unplugin-vue-components/resolvers'
+
+// your plugin installation
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -14,7 +20,13 @@ export default defineConfig({
   // base: '/qr-scan/',
   plugins: [
     //
-    mkcert({ hosts: ['dev.iulo.me'] }),
+    Components({
+      resolvers: [Vuetify3Resolver()]
+    }),
+    WindiCSS(),
+    mkcert({
+      // hosts: ['dev.iulo.me']
+    }),
     vue(),
     splitVendorChunkPlugin(),
     VitePWA({

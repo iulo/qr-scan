@@ -10,6 +10,10 @@ import ReloadPrompt from './components/ReloadPrompt.vue'
 </script>
 
 <style lang="scss">
+@import "sanitize.css";
+@import "sanitize.css/typography.css";
+@import "sanitize.css/assets.css";
+
 .app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -20,8 +24,10 @@ import ReloadPrompt from './components/ReloadPrompt.vue'
 }
 
 /* https://bulma.io/documentation/customize/with-webpack/#9-add-your-own-bulma-styles */
-@import 'bulma/sass/utilities/_all.sass';
+/* 
 @import 'bulma/sass/base/_all.sass';
 @import 'bulma/sass/elements/button.sass';
-@import 'bulma/sass/elements/content.sass';
+ */
+/* @import 'bulma/sass/utilities/_all.sass';
+@import 'bulma/sass/elements/content.sass'; */
 </style>
