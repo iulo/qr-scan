@@ -14,6 +14,17 @@ import ReloadPrompt from './components/ReloadPrompt.vue'
 @import "sanitize.css/typography.css";
 @import "sanitize.css/assets.css";
 
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  /* https://developer.chrome.com/blog/overscroll-behavior/ */
+  /* Disables pull-to-refresh but allows overscroll glow effects. */
+  overscroll-behavior-y: contain;
+}
+
 .app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
