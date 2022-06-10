@@ -9,8 +9,6 @@ declare module '@vue/runtime-core' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Scanner: typeof import('./src/components/Scanner/Scanner.vue')['default']
-    VarButton: typeof import('@varlet/ui')['_ButtonComponent']
-    VarIcon: typeof import('@varlet/ui')['_IconComponent']
     VBtn: typeof import('vuetify/components')['VBtn']
     VIcon: typeof import('vuetify/components')['VIcon']
   }
